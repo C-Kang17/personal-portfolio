@@ -16,8 +16,8 @@ jobs:
       - name: Deploy to VPS
         uses: appleboy/ssh-action@v0.1.8
         with:
-          host: your-vps-ip
-          username: your-vps-username
+          host: 138.2.15.109
+          username: ubuntu
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             sudo chown -R ubuntu:ubuntu /var/www/html
