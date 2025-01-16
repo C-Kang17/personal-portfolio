@@ -26,4 +26,5 @@ jobs:
             cd /var/www/html
             git add .
             git commit -m "Auto-commit local changes before pulling" || true
+            git config pull.rebase false
             git pull origin main
